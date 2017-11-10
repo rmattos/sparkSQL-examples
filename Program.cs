@@ -38,7 +38,6 @@ namespace sparkSQL_examples
 
             var resultFiltered = sqlContext.Sql("SELECT * FROM customers WHERE id = 500");
 
-            resultFiltered.ShowSchema();
             resultFiltered.Show();
 
             var filteredCount = resultFiltered.Count();
